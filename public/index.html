@@ -25,6 +25,65 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script>
+      // let a = 34;
+      let a = 'THIS IS STRING';
+
+      console.log(a);
+
+      function hello() {
+        console.log("Hey Jayesh")
+      }
+       let obj = {
+        r : 34,
+        p : 45,
+        func : function myFunc(number) {
+          console.log("The number is " + number)  
+        }
+       }
+      //  document.addEventListener("mouseover", function click() {
+      //       console.log("mouseover")
+      //       // alert("alert")
+      //       let p = confirm("are you sure?");
+      //       console.log(p);
+      //  })
+
+      //  let arr = [22,12,123];
+      //  console.log(this);
+      //  function myFunc(number) {
+      //   console.log("The Number is " + this);
+      //  }
+      //  myFunc(20);
+
+      //  let myFunction = (number) => {
+      //   console.log("The Number is " + this);
+      //  }
+      //  myFunction(22);
+      //  let mobj = {
+      //   a : this,
+      //   myFunction : (number) => {
+      //     console.log("This number is " + this);
+      //   }
+      //  }
+      //  mobj.myFunction(90);
+      //  console.log(mobj.a);
+
+      let mobj = {
+        a : this,
+        myFunction : function(number) {
+          console.log("This number is " + this);
+        }
+       }
+       mobj.myFunction(90);
+       console.log(mobj.a);
+
+       setTimeout(() => {
+        console.log("yayyya");
+       }, 3000);
+       console.log("mai neeche vali script hoon");
+    </script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +98,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
   </body>
 </html>
