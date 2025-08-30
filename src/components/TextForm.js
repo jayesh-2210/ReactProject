@@ -15,7 +15,7 @@ export default function TextForm(props) {
         console.log("handle on change");
         setText(event.target.value);
     }
-    const [text, setText] = useState("Enter Text Here");
+    const [text, setText] = useState("");
     // setText("new Text");
   return (
     <>
@@ -27,7 +27,7 @@ export default function TextForm(props) {
 
     </div>
     <div className="container">
-        <h1>Your Text Summary</h1>
+        <h2>Your Text Summary</h2>
         <p>{text.split(" ").length} words and {text.length} characters</p>
         <p>{0.008 * text.split(" ").length} minutes to read</p>
         <h2>Preview</h2>
